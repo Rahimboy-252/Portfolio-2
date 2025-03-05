@@ -163,25 +163,20 @@
 
     <script>
         document.getElementById('copy').addEventListener('click', function () {
-            // Matnni tanlash
+
             var text = document.getElementById('copy').innerText;
 
-            // Yangi input element yaratish
             var input = document.createElement('input');
             input.value = text;
             document.body.appendChild(input);
 
-            // Inputni tanlash va nusxalash
             input.select();
             input.setSelectionRange(0, 99999);
 
-            // Ko'chirish
             document.execCommand('copy');
 
-            // Inputni olib tashlash
             document.body.removeChild(input);
 
-            // Foydalanuvchiga xabar berish
             alert('Matn ko\'chirildi: ' + text);
         });
     </script>
