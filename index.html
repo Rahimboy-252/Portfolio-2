@@ -135,7 +135,7 @@
         <div class="last">
             <div class="lastbox1">
                 <h1>Let's Connect</h1>
-                <p>Say hello at <span>crazzyfrank06052@gmail.com</span> <br> For more info, here's my
+                <p>Say hello at <span>crazzyfrank06053@gmail.com</span> <br> For more info, here's my
                     <span>resume</span>
                 </p>
                 <i class='bx bxl-linkedin'></i>
@@ -156,6 +156,35 @@
             </div>
             <h6 class="foot">© 2025 U.Rahimboy</h6>
         </div>
+        <footer>
+            <h1>WebSiteda muammolar bo'lsa biz bilan bo'glaning <span id="copy">crazzyfrank06053@gmail.com</span></h1>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('copy').addEventListener('click', function () {
+            // Matnni tanlash
+            var text = document.getElementById('copy').innerText;
+
+            // Yangi input element yaratish
+            var input = document.createElement('input');
+            input.value = text;
+            document.body.appendChild(input);
+
+            // Inputni tanlash va nusxalash
+            input.select();
+            input.setSelectionRange(0, 99999);
+
+            // Ko'chirish
+            document.execCommand('copy');
+
+            // Inputni olib tashlash
+            document.body.removeChild(input);
+
+            // Foydalanuvchiga xabar berish
+            alert('Matn ko\'chirildi: ' + text);
+        });
+    </script>
 </body>
 
 </html>

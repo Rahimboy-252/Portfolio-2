@@ -42,6 +42,31 @@ nav h1 {
     color: #C7C7C7;
 }
 
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-family: monospace;
+    color: #C7C7C7;
+}
+
+footer h1 span{
+    color: #C7C7C7;
+    font-family: Bebas Neue;
+}
+
 .nav-p {
     font-weight: 500;
     font-size: 16px;
@@ -619,5 +644,11 @@ nav h1 {
 
     .foot {
         margin-top: 80px;
+    }
+    footer h1{
+        font-size: 10px;
+    }
+    footer{
+        justify-content: left;
     }
 }
