@@ -62,7 +62,7 @@ footer h1 {
     color: #C7C7C7;
 }
 
-footer h1 span{
+footer h1 span {
     color: #C7C7C7;
     font-family: Bebas Neue;
 }
@@ -645,10 +645,16 @@ footer h1 span{
     .foot {
         margin-top: 80px;
     }
-    footer h1{
+
+    footer h1 {
         font-size: 10px;
     }
-    footer{
+
+    footer {
         justify-content: left;
+    }
+
+    .navdiv2 {
+        display: inline-block !important;
     }
 }
